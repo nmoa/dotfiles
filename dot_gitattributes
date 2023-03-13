@@ -1,0 +1,3 @@
+*.c diff=cp932
+*.cpp diff=cp932
+*.h diff=cp932
