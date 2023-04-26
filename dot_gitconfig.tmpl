@@ -14,4 +14,5 @@
     textconv=iconv -f cp932 -t utf-8
 [diff "sjis"]
     textconv=iconv -f sjis -t utf-8
-
+[includeIf "hasconfig:remote.*.url:git@github.com:nmoa/**"]
+    path = ~/.gitconfig.github
