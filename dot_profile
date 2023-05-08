@@ -27,6 +27,8 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export PS1='\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@WSLonNote \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ '
+export PATH="$PATH:/mnt/c/WINDOWS/system32"
+export WINDOWS_IP=$(ipconfig.exe | iconv -f sjis -t utf8 | grep IPv4 | head -1 | sed -r 's/.*: ([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*/\1/')
 
 exec fish
 
