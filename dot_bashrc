@@ -1,14 +1,6 @@
-export LESS='-giMRSj10'
-export PATH="/usr/include:/usr/local/include:$HOME/.local/bin:$PATH"
-export DISPLAY="localhost:0.0"
 alias ls='ls -a -I "NTUSER.DAT*" --color=auto'
 alias ll='ls -l'
 alias rm='rm -v'
 alias showpath='echo $PATH | tr '\'':'\'' '\''\n'\'
 alias relogin='exec $SHELL -l'
 alias sshv='cocot -- ssh cd997'
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
