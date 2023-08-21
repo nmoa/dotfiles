@@ -14,7 +14,7 @@ nmoa's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
     chezmoi init nmoa
     ```
 
-1. Add template data to `~/.config/chezmoi/chezmoi.toml` like this:
+1. Add template data to `~/.config/chezmoi/chezmoi.toml` as below:
 
      ```toml
      [data]
