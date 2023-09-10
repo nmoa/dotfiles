@@ -11,7 +11,10 @@ nmoa's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
 1. Initialize chezmoi.
    
     ```bash
+    # Clone via HTTPS 
     chezmoi init nmoa
+    # Clone via SSH
+    chezmoi init --ssh nmoa
     ```
 
 1. Add template data to `~/.config/chezmoi/chezmoi.toml` as below:
