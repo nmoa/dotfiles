@@ -14,11 +14,11 @@
     textconv=iconv -f cp932 -t utf-8
 [diff "sjis"]
     textconv=iconv -f sjis -t utf-8
-[includeIf "hasconfig:remote.*.url:git@github.com:R0057-RGC-PP/**"]
-    path = ~/.gitconfig.github_org
-[includeIf "hasconfig:remote.*.url:https://github.com/R0057-RGC-PP/**"]
-    path = ~/.gitconfig.github_org
 [includeIf "hasconfig:remote.*.url:git@github.com:**/**"]
     path = ~/.gitconfig.github
+[includeIf "hasconfig:remote.*.url:git@github.com:R0057-RGC-PP/**"]
+    path = ~/.gitconfig.github_org
 [includeIf "hasconfig:remote.*.url:https://github.com/**/**"]
     path = ~/.gitconfig.github
+[http]
+	postBuffer = 10M
