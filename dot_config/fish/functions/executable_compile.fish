@@ -17,12 +17,12 @@ function compile
     echo "$dirname_sjis"
     echo $is_delete
     if set -lq _flag_n
-        rsync -avn $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/code/$dirname_sjis"
+        rsync -avn $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/my_code/$dirname_sjis"
     else if set -lq _flag_m
-        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/code/$dirname_sjis" && cocot -- ssh cd997 "cd code/$dirname_sjis/src; make -n $argv[2]"
+        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/my_code/$dirname_sjis" && cocot -- ssh cd997 "cd my_code/$dirname_sjis/src; make -n $argv[2]"
     else if set -lq _flag_c
-        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/code/$dirname_sjis" && cocot -- ssh cd997 "cd code/$dirname_sjis/src; make clean && lsfmake $argv[2]"
+        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/my_code/$dirname_sjis" && cocot -- ssh cd997 "cd my_code/$dirname_sjis/src; make clean && lsfmake $argv[2]"
     else
-        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/code/$dirname_sjis" && cocot -- ssh cd997 "cd code/$dirname_sjis/src; lsfmake $argv[2]"
+        rsync -av $is_delete --exclude=".git" --exclude="build/*" "$dirname" "cd997:~/my_code/$dirname_sjis" && cocot -- ssh cd997 "cd my_code/$dirname_sjis/src; lsfmake $argv[2]"
     end
 end
