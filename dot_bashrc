@@ -1,6 +1,7 @@
 alias ls='ls -a -I "NTUSER.DAT*" --color=auto'
 alias ll='ls -l'
 alias rm='rm -v'
+alias fullpath='readlink -f'
 alias showpath='echo $PATH | tr '\'':'\'' '\''\n'\'
 alias relogin='exec $SHELL -l'
 alias sshv='cocot -- ssh cd997'
